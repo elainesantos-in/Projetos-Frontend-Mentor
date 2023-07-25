@@ -1,0 +1,10 @@
+.celular{
+    position: absolute ;
+    left: 17rem;
+    top: 8rem;
+    background-color: #ffffff ;
+    height: 26rem;
+    width: 14rem;
+    border-radius: 2rem;
+    box-shadow: 0.8rem 0.8rem 1rem #dddddd8f ;
+}
