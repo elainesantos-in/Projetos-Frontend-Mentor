@@ -1,0 +1,74 @@
+.usuario{
+    position: absolute;
+    background-color: #ffffff00;
+    top: 10.5rem;
+    left: 18rem;
+    width: 12rem;
+    height: 3rem;
+}
+.usuario-encapsulamento{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff00;
+}
+#usuario-seta{
+    margin: 0;
+    position: absolute;
+    top: 0.7rem;
+    font-size: 0.8rem;
+    background-color: rgba(240, 248, 255, 0);
+    color: #ffffff;
+}
+
+#usuario-menu{
+    margin: 0;
+    position: absolute;
+    left: 10rem;
+    top: 0.7rem;
+    font-size: 0.8rem;
+    background-color: rgba(240, 248, 255, 0);
+    color: #ffffff;
+
+}
+
+.usuario-foto{
+    margin: 0; 
+    height: 5%;
+    padding: 0.2rem;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.imagem-avatar{
+    border-radius: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    padding: 0.1rem;
+}
+
+.usuario-nome{
+    position: absolute;
+    top: 0.2rem;
+    left: 3.3rem;
+    background-color: #ffffff00;;
+}
+
+.nome{
+    font-family:'Manrope';
+    font-size: 10px;
+    margin: 0;
+    height: 1rem;
+    background-color: #ffffff00;;
+    color: #ffffff;
+}
+
+.status{
+    font-family: 'Manrope';
+    font-size: 6px;
+    margin: 0;
+    height: 0.5rem;
+    background-color: #ffffff00;
+    color: #ffffff;
+
+}
