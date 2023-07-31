@@ -1,0 +1,77 @@
+
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.img-logotipo{
+    position: absolute;
+    left: 13rem;
+    top: 2rem;
+}
+
+.menu{
+    position: absolute;
+    left: 25rem;
+    top: 2.1rem;
+    width: 25rem;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(160, 154, 154);
+    
+}
+
+.lista-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 13rem;
+    margin: 0;
+    
+}
+
+.itens-menu{
+    height: 3.1rem;
+    width: 6rem;
+    margin: 0 15px;
+}
+
+.itens-menu:hover{
+    color: rgb(15, 15, 15);
+    border-bottom: 4px solid #fc7917;
+}
+
+.carrinho{
+    position: absolute;
+    left: 75rem;
+    top: 2.3rem;
+}
+
+.carrinho:hover{
+    color: #000000;
+}
+
+.imagem-perfil{
+    position: absolute;
+    left: 78rem;
+    top: 1.7rem;
+    border-radius: 10rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #fc7917;
+}
+
+.linha-divisao{
+    height:1px; 
+    width: 68rem;
+    position: absolute;
+    top: 5.5rem;
+    left: 13rem;
+    background-color: #cfcfcf;
+    
+}
