@@ -7,14 +7,8 @@
 }
 
 
-.backgroud-componentes{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+.backgroud-componentes__um {
 
-
-.backgroud-componentes__um{
     background-image: linear-gradient( to bottom , #ff41f6 ,#913afe) ;
     border-bottom-left-radius: 7rem;
     border-bottom-right-radius: 11rem;
@@ -25,11 +19,16 @@
 }
 
 .backgroud-componentes__dois{
-    background-color: #f7f5fa ;
+    background-color: #f7f5fa;
     border-top-left-radius: 14rem;
-    border-top-right-radius: 3rem; 
+    border-top-right-radius: 3rem;
     height: 35rem;
     margin: 5rem 0 0 0;
     width: 20rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 0rem;
 }
+
+    
 
