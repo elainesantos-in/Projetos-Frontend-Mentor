@@ -209,8 +209,8 @@ img{
     position: absolute;
     left: 0.5rem;
     top: 17.2rem;
-    width: 10rem;
-    height: 1.3rem;
+    width: 11rem;
+    height: 1.7rem;
     border-radius: 3rem;
     background-color: #ffffff;
 }
@@ -221,15 +221,15 @@ img{
     font-family: 'Manrope';
     font-size: 6px;
     left: 1rem;
-    top: 0.4rem;
+    top: 0.6rem;
     color: #c5c5c5;
 }
 
 #enviar-menssagem{
     position: absolute;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     background-color: rgba(240, 248, 255, 0);
-    left: 8.6rem;
+    left: 9rem;
     
 }
 
