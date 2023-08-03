@@ -1,0 +1,73 @@
+.descritivo{
+    position: absolute;
+    left: 45rem;
+    top: 11rem;
+    
+}
+
+
+
+.titulo--snearkercompany{
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight:900;
+    color: #ff9645;
+}
+
+.subtitulo--snearker{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:900;
+    color: #0c0c0c;
+    width: 23rem;
+    margin: 0;
+}
+.parte--texto__descritivo{
+    width: 24rem;
+}
+.texto--descritivo{
+    
+    font-family: 'Nunito', sans-serif;
+    color: #857f7f;
+    font-size: 0.9rem;
+    line-height:1.6rem
+}
+
+.preço-promocional{
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight:900;
+    width: 4rem;
+    margin: 0;
+}
+
+.desconto{
+    background-color: #ffe0c9;
+    border-radius: 7px;
+    height: 1.5rem;
+    width: 2.5rem;
+    position: absolute;
+    left: 7rem;
+    top: 14.7rem;
+    
+}
+.texto--desconto{
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight:900;
+    color: #fc7917;
+    margin: 0;
+    position: absolute;
+    left: 0.4rem;
+    top: 0.2rem;
+}
+
+.preço--normal{
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight:600;
+    font-style:initial;
+    color: #afafaf;
+    text-decoration: line-through;
+
+}
