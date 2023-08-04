@@ -33,6 +33,7 @@
     width: 13rem;
     margin: 0;
     
+    
 }
 
 .itens-menu{
@@ -44,12 +45,14 @@
 .itens-menu:hover{
     color: rgb(15, 15, 15);
     border-bottom: 4px solid #fc7917;
+    cursor: pointer;
 }
 
 .carrinho{
     position: absolute;
     left: 75rem;
     top: 2.3rem;
+    cursor: pointer;
 }
 
 .carrinho:hover{
@@ -64,6 +67,7 @@
     height: 2.5rem;
     width: 2.5rem;
     background-color: #fc7917;
+    cursor: pointer;
 }
 
 .linha-divisao{
