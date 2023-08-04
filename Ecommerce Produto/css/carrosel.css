@@ -31,3 +31,73 @@
     opacity: 50%;
     border:solid 3px #fc7917;
 }
+
+.imagens--grande{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.466);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.carrosel{
+    display: flex;
+    flex-direction: row;
+    width: 29rem;
+    height: 29rem;
+    position: absolute;
+    left: 30rem;
+    top: 7rem;
+}
+
+.imagens{
+    width: 29rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: row;
+}
+.botao-carrosel{
+    display: flex;
+}
+.proximo1{
+    position: absolute;
+    left: -1rem;
+    top: 13rem;
+    font-family: 'Nunito', 'sans-serif';
+    background-color: rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: rgb(0, 0, 17);
+    font-size: 1rem;
+}
+
+.proximo2{
+    position: absolute;
+    left: 27.5rem;
+    top: 13rem;
+    font-family: 'Nunito', 'sans-serif';
+    background-color: rgb(255, 255, 255);
+    border-radius: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    color: rgb(0, 0, 17);
+    font-size: 1rem;
+}
+
+.fechar{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left:27rem;
+    top: -2rem;
+}
