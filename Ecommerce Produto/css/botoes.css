@@ -1,7 +1,7 @@
 .botoes{
     position: absolute;
-    left: 44.5rem;
-    top: 33rem;
+    left: 28.5rem;
+    top: 22rem;
     width: 35rem;
     
 }
@@ -18,6 +18,7 @@
     color: #fc7917;
     font-family: 'Nunito', sans-serif;
     padding: 0;
+    cursor:pointer;
     
 }
 
@@ -57,8 +58,8 @@
     padding: 0;
     position: absolute;
     left: 6rem;
-    top:0rem
-    
+    top:0rem;
+    cursor:pointer;
 }
 
 .add--carrinho{
@@ -77,6 +78,7 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     box-shadow: 0rem 1rem 1rem #ad866b23;
+    cursor:pointer;
     
 }
 
@@ -86,4 +88,13 @@
     margin: 0.7rem;
     font-weight: 300;
 
+}
+
+.alerta{
+    margin-top: 0.9rem;
+    color: #e70c0c;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    display: none;
 }
