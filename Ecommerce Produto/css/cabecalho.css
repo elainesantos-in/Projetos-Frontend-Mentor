@@ -58,6 +58,28 @@
 .carrinho:hover{
     color: #000000;
 }
+.nQuatidadeCarrinho{
+    display: none;
+
+}
+
+.numero--nocarrinho{
+    position: absolute;
+    left: 76rem;
+    top:2.2rem;
+    border-radius: 2rem;
+    background-color: #fc7917 ;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    height: 1rem;
+    width: 1rem;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
 
 .imagem-perfil{
     position: absolute;
