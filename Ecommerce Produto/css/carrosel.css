@@ -4,20 +4,18 @@
     top: 10rem;
 }
 
-.imagens{
-    width: 23rem;
-    height: 6rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    
-    
-}
 
 .imagem-principal{
     width: 23rem;
     height: 23rem;
     border-radius: 10px;
+}
+
+.imagens{
+    width: 29rem;
+    height: rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .imagem-thumbnail{
@@ -32,6 +30,8 @@
     border:solid 3px #fc7917;
 }
 
+
+/*-----------------------------------------------------------------------*/
 .imagens--grande{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.466);
@@ -41,6 +41,8 @@
     right: 0;
     display: none;
 }
+
+
 
 .carrosel{
     display: flex;
@@ -52,12 +54,7 @@
     top: 7rem;
 }
 
-.imagens{
-    width: 29rem;
-    height: 29rem;
-    display: flex;
-    flex-direction: row;
-}
+
 .botao-carrosel{
     display: flex;
 }
