@@ -30,6 +30,7 @@
     </ul>
     </nav>
     <img src="/Desafios-Frontend-Mentor/Ecommerce Produto/images/icon-cart.svg" class="carrinho" alt="icone de carrinho">
+    <div class='nQuatidadeCarrinho'><span class="numero--nocarrinho">1</span></div>
     <img src="/Desafios-Frontend-Mentor/Ecommerce Produto/images/image-avatar.png" class="imagem-perfil" alt="imagem de perfil do usuario">
     
     <div class="linha-divisao"> </div>
@@ -65,10 +66,10 @@
 
       <div class="botoes">
         <button class="botao--subtracao">-</button>
-        <div class="quantidade--encapsulamento"><p class="quantidade">0</p></div>
+        <span class="quantidade">0</span>
         <button class="botao--adicao">+</button><div>
         <button class="add--carrinho"><span class="material-symbols-outlined" id="carrinho">shopping_cart</span> Add to cart</button>
-        <span class="alerta">Limite de 5 UN</span>
+        <span class="alerta" display="none">Você tem um limite de compra de 5 unidade por produto</span>
       </div>
 
    
@@ -90,6 +91,7 @@
     </main>
 
     <script src="/Desafios-Frontend-Mentor/Ecommerce Produto/javascript/botoes.js"></script>
+    <script src="/Desafios-Frontend-Mentor/Ecommerce Produto/javascript/imagens.js"></script>
   </head>
 </body>
 </html>
