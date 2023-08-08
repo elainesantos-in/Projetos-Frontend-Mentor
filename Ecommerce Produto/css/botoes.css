@@ -21,8 +21,11 @@
     cursor:pointer;
     
 }
-
-.quantidade--encapsulamento{
+.quantidade{
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
     height: 2.8rem;
     width: 3rem;
     background-color: rgb(241, 241, 241);
@@ -35,13 +38,6 @@
     justify-content: center;
     align-items: center;
 
-}
-
-.quantidade{
-    font-size: 1rem;
-    color: #000000;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
 }
 
 .botao--adicao{
@@ -82,6 +78,10 @@
     
 }
 
+
+.add--carrinho:hover{
+    background-color: #d7650e;
+}
 
 #carrinho{
     font-size: 1.1rem;
