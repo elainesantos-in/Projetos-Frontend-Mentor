@@ -1,31 +1,37 @@
 let subtrair = document.querySelector('.botao--subtracao');
 let quantidade = document.querySelector('.quantidade');
 let adicao = document.querySelector('.botao--adicao');
-let alerta = document.querySelector('.alerta')
-console.log('aqui')
-let subtrairCarrinho = Number(subtrair.value);
-let quantidadeCarrinho = Number(quantidade.value);
-let adicaoCarrinho = Number(adicao.value);
-console.log('aqui')
+let alerta = document.querySelector('.alerta');
+let addcarrinhoButton = document.querySelector('.add--carrinho')
+let divNumero = document.querySelector('.nQuatidadeCarrinho')
+let quantidadeNoCarrinho = document.querySelector('.numero--nocarrinho')
 
-adicaoCarrinho.addEventListener('click', aumentarQuantidade);
-subtrairCarrinho.addEventListener('click', diminuirQuantidade);
+
+adicao.addEventListener('click', aumentarQuantidade);
+subtrair.addEventListener('click', diminuirQuantidade);
+addcarrinhoButton.addEventListener('click', addAoCarrinho);
 
 function aumentarQuantidade() {
-    if (quantidade >= 5){
-       alerta.style.display = 'block';
-   } else {
-       quantidadeCarrinho = quantidadeCarrinho + 1
-   }
-   }
-function diminuirQuantidade() {
-    if (quantidadeCarrinho > 0 ){
-        quantidadeCarrinho =  quantidadeCarrinho - 1
-        console.log('aqui')
-    }else if(quantidade > 5){
-        quantidade = 5
+    if (quantidade.innerText >= 5) {
         alerta.style.display = 'block';
+    } else {
+        quantidade.innerText = parseInt(quantidade.innerText) + 1;
     }
+}
 
+function diminuirQuantidade() {
+    if (parseInt(quantidade.innerText) > 0) {
+        quantidade.innerText = parseInt(quantidade.innerText) - 1;
+    } if (parseInt(quantidade.innerText) < 5) {
+        alerta.style.display = 'none';
+    }
+}
+
+function addAoCarrinho() {
+    if(parseInt(quantidade.innerText) > 0 ){
+        divNumero.style.display='block'
+        quantidadeNoCarrinho.innerText = parseInt(quantidade.innerText)
+
+    }
 }
 
