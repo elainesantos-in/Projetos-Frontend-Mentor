@@ -1,15 +1,41 @@
 let notas = document.querySelectorAll('.nota');
+let buttonEnviar = document.querySelector('.button--enviar');
+let notajaEnviada = document.querySelector('.nota--enviada');
+let cardUm = document.querySelector('.card-conteudo');
+let cardDois = document.querySelector('.card--conteudo__final');
 
-parseInt(notas[index]).addEventListener('onclick', selecionandoNota )
+notas.forEach((nota, index) => {
+    nota.addEventListener('click', () => {
+      selecionandoNota(index);
+    });
+  });
+  
+  // Função para destacar a nota selecionada
+  function selecionandoNota(index) {
+    // Remover a classe "nota-selecionada" de todas as notas
+    notas.forEach(nota => {
+      nota.classList.remove('nota-selecionada');
+    });
+  
+    // Adicionar a classe "nota-selecionada" à nota clicada
+    notas[index].classList.add('nota-selecionada');
+  }
 
-function indexnotas() {
-    for ( let i=0; i<notas.length; i++){
-        var index = notas[i]
-    };
-    return index
-};
 
-function selecionandoNota(){
-    parseInt(notas[index]).style.backgroudcolor='#ff6619'
+  function enviandoNota() {
+    const resultado = document.querySelector('.nota-selecionada');
 
+    if (resultado) {
+      const rating = resultado.getAttribute('value');
+        notajaEnviada.innerText = `You selected  ${rating}  out of 5`
+        cardUm.style.display = 'none';
+        cardDois.style.display = 'block';  
 }
+}
+
+buttonEnviar.addEventListener('click', enviandoNota);
+  
+
+
+
+
