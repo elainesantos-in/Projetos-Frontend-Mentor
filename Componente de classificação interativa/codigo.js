@@ -23,11 +23,11 @@ notas.forEach((nota, index) => {
 
 
   function enviandoNota() {
-    const resultado = document.querySelector('.nota-selecionada');
+    const notaSelecionada = document.querySelector('.nota-selecionada');
 
-    if (resultado) {
-      const rating = resultado.getAttribute('value');
-        notajaEnviada.innerText = `You selected  ${rating}  out of 5`
+    if (notaSelecionada) {
+        const nota = notaSelecionada.getAttribute('value');
+        notajaEnviada.innerText = `You selected  ${nota}  out of 5`
         cardUm.style.display = 'none';
         cardDois.style.display = 'block';  
 }
