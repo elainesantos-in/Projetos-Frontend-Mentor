@@ -1,0 +1,43 @@
+.label--entrada__pessoas{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3rem;
+    font-weight:700;
+    color: hsl(186, 14%, 43%);
+    display: block;
+    margin-top: 2rem;
+}
+
+.pessoas{
+    position: relative;
+    margin-top: 0.3rem;
+    height: 2.5rem;
+    width: 18rem;
+    border: none;
+    background-color:hsl(180, 32%, 92%);
+}
+
+.entrada--pessoas{
+    margin-top: 0.0rem;
+    margin-left: 2rem;
+    height: 2.3rem;
+    width: 15rem;
+    border: none;
+    background-color:hsl(180, 32%, 92%);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3rem;
+    font-weight:700;
+    color: hsl(183, 100%, 15%);
+    text-align: end;
+}
+
+.entrada--pessoas:focus-visible {
+    outline: none;
+}
+
+#icone--pessoas{
+    position: absolute;
+    left: 1rem;
+    top: 0.7rem;
+    color: hsl(186, 14%, 43%);
+    width: 0.9rem;
+}
