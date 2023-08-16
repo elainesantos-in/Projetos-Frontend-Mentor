@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href= "background.css">
-  <link rel="stylesheet" href="inputValor.css">
-  <link rel="stylesheet" href="porcentagem.css">
+  <link rel="stylesheet" href= "/Desafios-Frontend-Mentor/Calculator de Gorjeta/css/background.css">
+  <link rel="stylesheet" href="/Desafios-Frontend-Mentor/Calculator de Gorjeta/css/inputValor.css">
+  <link rel="stylesheet" href="/Desafios-Frontend-Mentor/Calculator de Gorjeta/css/porcentagem.css">
+  <link rel="stylesheet" href="/Desafios-Frontend-Mentor/Calculator de Gorjeta/css/inputPessoas.css">
+  <link rel="stylesheet" href="/Desafios-Frontend-Mentor/Calculator de Gorjeta/css/resultado.css">
+  <link rel="stylesheet" href="resultado.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,700;1,800;1,900;1,1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,20 +25,55 @@
   <img src="./images/logo.svg" alt="logotipo splitter" class="logotipo--splitter">
 
   <div class="background--calculadora">
-    <label for="entrada-valor" class="label--entrada__valor">Valor</label>
-        <form action="" class="valor">
-            <img src="./images/icon-dollar.svg" alt="icone--dolar" id="icone--dolar">
-            <input type="number" class="entrada--valor">
-        </form>
-    <h1 class="titulo--gorjeta">Selecione gorjeta %</h1>
-    <div class="porcentagem--grid__container">
-        <button class="valor--porcentagem">5%</button>
-        <button class="valor--porcentagem">10%</button>
-        <button class="valor--porcentagem">15%</button>
-        <button class="valor--porcentagem">20%</button>
-        <button class="valor--porcentagem">50%</button>
-        <button class="valor--porcentagem"> Person.</button>
-    </div>
+        <div>
+            <label for="entrada-valor" class="label--entrada__valor">Valor</label>
+                <form action="" class="valor">
+                    <img src="./images/icon-dollar.svg" alt="icone--dolar" id="icone--dolar">
+                    <input type="number" class="entrada--valor">
+                </form>
+        </div>
+
+        <div>
+            <h1 class="titulo--gorjeta">Selecione gorjeta %</h1>
+            <div class="porcentagem--grid__container">
+                <button class="valor--porcentagem">5%</button>
+                <button class="valor--porcentagem">10%</button>
+                <button class="valor--porcentagem">15%</button>
+                <button class="valor--porcentagem">20%</button>
+                <button class="valor--porcentagem">50%</button>
+                <button class="personaliza"> Person.</button>
+            </div>
+        </div>
+        <div>
+            <label for="entrada-pessoas" class="label--entrada__pessoas">Numero de Pessoas</label>
+                <form action="" class="pessoas">
+                    <img src="./images/icon-person.svg" alt="icone--dolar" id="icone--pessoas">
+                    <input type="number" class="entrada--pessoas">
+                </form>
+        </div>
+        <div>
+            <div class="resultado">
+
+                <div class="valor--gorjeta">
+                        <h2 class="titulo--valor__gorjeta">Valor da gorjeta</h2>
+                        <p class="descritivo--valor__gorjeta">/ pessoa</p>
+                        <p class="resultado--porpessoa">$4,50</p>
+                </div>
+
+                    
+
+                <div class="valor--total">
+                    <h2 class="titulo--total__gorjeta">Total</h2>
+                    <p class="descritivo--total__gorjeta">/ pessoa</p>
+                    <p class="resultado--total">$34,50</p>
+                </div>
+
+                <div style="position: relative;">
+                <button class="reset">RESET</button>
+                </div>
+
+            </div>
+        </div>
 
 
   </div>
