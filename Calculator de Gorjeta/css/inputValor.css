@@ -5,11 +5,13 @@
     color: hsl(186, 14%, 43%);
     display: block;
     margin-top: 2rem;
+    margin-left: 3rem;
 }
 
 .valor{
     position: relative;
     margin-top: 0.3rem;
+    margin-left: 3rem;
     height: 2.5rem;
     width: 18rem;
     border: none;
@@ -18,8 +20,8 @@
 }
 
 .entrada--valor{
-    margin-top: 0.0rem;
-    margin-left: 2rem;
+    
+    margin-left: 3rem;
     height: 2.3rem;
     width: 15rem;
     border: none;
@@ -43,3 +45,18 @@
     width: 0.9rem;
 }
 
+@media screen and (min-width: 1200px)and (max-width: 2500px){
+    .label--entrada__valor{
+        margin-top: 0rem;
+    
+    }
+    .valor{
+        width: 19rem; 
+    }
+    .entrada--valor{
+        width: 16rem;
+
+    }
+
+    
+}
