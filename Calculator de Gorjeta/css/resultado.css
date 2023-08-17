@@ -92,4 +92,46 @@
     border-style: none;
 }
 
+@media screen and (min-width: 1200px)and (max-width: 2500px){
+    .resultado {
+        height: 21rem;
+        width: 24rem;
+        padding: 1rem;
+    }
 
+    .titulo--valor__gorjeta {
+        font-size: 1.0rem;
+            
+    }
+
+    .descritivo--valor__gorjeta{
+        font-size: 1rem;
+
+    }
+
+    .resultado--porpessoa{
+        font-size: 1.8rem;
+        left: 18rem;
+    }
+
+
+    .titulo--total__gorjeta{
+        font-size: 1rem;
+    }
+    
+    .descritivo--total__gorjeta{
+        font-size: 1rem;
+    }
+    
+    .resultado--total{
+        font-size: 1.8rem;
+        left: 17rem;
+    }
+
+    .reset{
+        width: 23rem;
+        height: 2.8rem;
+        top: 17rem;
+        font-size: 1rem;
+    }
+}
