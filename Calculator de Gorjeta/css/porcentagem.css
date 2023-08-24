@@ -38,6 +38,11 @@
     color: hsl(186, 14%, 43%);
 }
 
+.botaoclicado{
+  background-color:hsl(172, 67%, 45%) ; 
+  color: hsl(183, 100%, 15%);
+}
+
 @media screen and (min-width: 1200px)and (max-width: 2500px) {
   .porcentagem--grid__container{
     grid-template-columns: 5.6rem 5.6rem 5.6rem;
