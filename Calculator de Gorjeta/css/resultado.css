@@ -1,13 +1,17 @@
 .resultado{
-    height: 15rem;
+    height: 16rem;
     width: 18rem;
     border-radius: 0.7rem;
-    background-color: hsl(183, 100%, 15%);
-    margin-top: 1rem;
+    background-color: rgb(0, 73, 77);
+    margin-top: 3rem;
+    padding-right: 1.5rem;
+
 }
 
 .valor--gorjeta{
     position: relative;
+    width: 19rem;
+    height: 5rem;
 
 }
 
@@ -26,7 +30,7 @@
 .descritivo--valor__gorjeta{
     color: hsl(184, 14%, 56%);
     position: absolute;
-    top: 3.5rem;
+    top: 4rem;
     left: 1.5rem;
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
@@ -40,11 +44,13 @@
     color: hsl(172, 67%, 45%);
     position: absolute;
     left: 12rem;
-    top: 2rem;
+    top: 2.5rem;
 }
 
 .valor--total{
     position: relative;
+    width: 24rem;
+    height: 5rem;
 
 }
 .titulo--total__gorjeta{
@@ -53,14 +59,14 @@
     font-weight:700;
     color: hsl(0, 0%, 100%);
     position: absolute;
-    top: 6rem;
+    top: 2rem;
     left: 1.5rem;
 }
 
 .descritivo--total__gorjeta{
     color: hsl(184, 14%, 56%);
     position: absolute;
-    top: 7.3rem;
+    top: 4.3rem;
     left: 1.5rem;
     font-family: 'Space Mono', monospace;
     font-size: 0.8rem;
@@ -74,14 +80,14 @@
     color: hsl(172, 67%, 45%);
     position: absolute;
     left: 11rem;
-    top: 6rem;
+    top: 3rem;
 }
 
 .reset{
     position: absolute;
-    width: 16rem;
+    width: 17rem;
     height: 2.8rem;
-    top: 11rem;
+    top: 2rem;
     left: 1rem;
     background-color: hsl(172, 67%, 45%);
     font-family: 'Space Mono', monospace;
@@ -96,7 +102,7 @@
     .resultado {
         height: 21rem;
         width: 24rem;
-        padding: 1rem;
+        padding:  19.5px 1rem 0.5rem
     }
 
     .titulo--valor__gorjeta {
@@ -131,7 +137,8 @@
     .reset{
         width: 23rem;
         height: 2.8rem;
-        top: 17rem;
+        top: 7rem;
         font-size: 1rem;
+        
     }
 }
