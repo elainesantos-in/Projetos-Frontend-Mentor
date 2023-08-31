@@ -37,7 +37,7 @@
     font-weight:700;
 }
 
-.resultado--porpessoa{
+.resultadoTotal--gorjeta{
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
@@ -73,7 +73,7 @@
     font-weight:700;
 }
 
-.resultado--total{
+.resultadoporPessoa--gorjeta{
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
