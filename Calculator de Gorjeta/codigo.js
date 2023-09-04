@@ -3,19 +3,7 @@ var porcentagens = document.querySelectorAll('.valor--porcentagem');
 var quantidadedePessoas = document.querySelector('.entrada--pessoas');
 var valorTotalGorjeta = document.querySelector('.resultadoTotal--gorjeta');
 var valorTotalGorjetaporPessoa = document.querySelector('.resultadoporPessoa--gorjeta');
-
-//valorTotal.addEventListener('keyup', valorReal);
-//quantidadedePessoas.quantidadedePessoas
-
-/*function valorReal(){
-    var valor = parseFloat(valorTotal.value); // Converte o valor para número
-
-    // Atualiza os resultados
-    resultadoporPessoa.innerText = valor.toFixed(2);
-    resultadoTotal.innerText = valor.toFixed(2);
-}
-*/
-quantidadedePessoas.addEventListener('keyup', porPessoas)
+var buttomLimpar = document.querySelector('.reset');
 
 porcentagens.forEach(valor => {
     valor.addEventListener('click', () => {
@@ -31,24 +19,36 @@ porcentagens.forEach(valor => {
         
         // Atualiza os resultados
         valorTotalGorjeta.innerText = gorjetaTotal.toFixed(2);
-        valorTotalGorjetaporPessoa.innerText = gorjetaTotal / parseFloat(quantidadedePessoas)
 
     });
 });  
 
-function porPessoas()
 
-    porcentagens.forEach(valorporcentagem =>{
-        var porcentagemSelecionada = parseFloat(valorporcentagem.innerText) / 100
-        var gorjetaTotal= parseFloat(valorTotal.value) * porcentagemSelecionada;
-        
-        valorTotalGorjetaporPessoa.innerText = gorjetaTotal / parseFloat(quantidadedePessoas)
-
-
+function porPessoas(valorTotalGorjeta, quantidadedePessoas) {
+    var gorjetaPorPessoa = parseFloat(valorTotalGorjeta) / parseFloat(quantidadedePessoas);
+    
+    // Verifica se a divisão resultou em "NaN" ou é indefinida
+    if (isNaN(gorjetaPorPessoa) || !isFinite(gorjetaPorPessoa)) {
+        return 0; // Retorna 0 em vez de "NaN"
+    }
+    
+    return gorjetaPorPessoa;
 }
-    porPessoas(valorTotal.value,)
-)
 
+quantidadedePessoas.addEventListener('keyup', function() {
+    var gorjetaPorPessoa = porPessoas(valorTotalGorjeta.innerText, quantidadedePessoas.value);
+    valorTotalGorjetaporPessoa.innerText = gorjetaPorPessoa.toFixed(2);
+});
 
+buttomLimpar.addEventListener('click',reset);
 
+function reset(){
+    valorTotal.value = '';
+    quantidadedePessoas.value = '';
+    valorTotalGorjeta.innerText = '0,00';
+    valorTotalGorjetaporPessoa.innerText = '0,00';
 
+    porcentagens.forEach(valorUm => {
+                valorUm.classList.remove('botaoPorcentagemClicado');
+            });
+}
