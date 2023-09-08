@@ -1,0 +1,46 @@
+.imgUsuario{
+    height: 40%;
+    margin-right: 1rem;
+}
+
+#cardNotificacao{
+    height: 60rem;
+}
+
+.divNotificacao{
+    margin: 12px;
+    height: 6rem;
+    display: flex;
+}
+
+.notif{
+    display: flex;
+    flex-direction: column;
+}
+
+.nomeUsuario{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 900;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+}
+
+.descricaoNotificacao{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0;
+    color: hsl(219, 12%, 42%);
+}
+
+.dataNotificacao{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0;
+
+}
+
+
+
