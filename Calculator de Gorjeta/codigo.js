@@ -1,9 +1,12 @@
 var valorTotal = document.querySelector('.entrada--valor');
 var porcentagens = document.querySelectorAll('.valor--porcentagem');
+var porcentPersolizado = document.querySelector('.personaliza')
 var quantidadedePessoas = document.querySelector('.entrada--pessoas');
 var valorTotalGorjeta = document.querySelector('.resultadoTotal--gorjeta');
 var valorTotalGorjetaporPessoa = document.querySelector('.resultadoporPessoa--gorjeta');
 var buttomLimpar = document.querySelector('.reset');
+
+
 
 porcentagens.forEach(valor => {
     valor.addEventListener('click', () => {
@@ -23,6 +26,12 @@ porcentagens.forEach(valor => {
     });
 });  
 
+/*porcentPersolizado.addEventListener('keyup', () => {
+        
+        var porcentagemSelecionada = parseFloat(porcentPersolizado.value) / 100; // Converte a porcentagem para um número decimal
+        var gorjetaTotal = parseFloat(valorTotal.value) * porcentagemSelecionada;
+        valorTotalGorjeta.innerText = gorjetaTotal.toFixed(2);
+});  */
 
 function porPessoas(valorTotalGorjeta, quantidadedePessoas) {
     var gorjetaPorPessoa = parseFloat(valorTotalGorjeta) / parseFloat(quantidadedePessoas);
@@ -50,5 +59,5 @@ function reset(){
 
     porcentagens.forEach(valorUm => {
                 valorUm.classList.remove('botaoPorcentagemClicado');
-            });
+    });
 }
