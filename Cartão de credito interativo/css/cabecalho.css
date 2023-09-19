@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+
+
+#cabecalhoBackground{
+    position: relative;
+}
+
+#versoCartao {
+    position: absolute;
+    height: 10rem;
+    left: 4rem;
+    top: 2rem;
+}
+
+#frenteCartao{
+    position: absolute;
+    height: 10rem;
+    left: 1rem;
+    top: 7.6rem;
+}
+
+#logoDocartao{
+    position: absolute;
+    height: 10rem;
+    left: 2rem;
+    top: 9rem;
+    height: 2rem;
+}
+
+.numerodoCartao{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 1.2rem;
+    left: 2rem;
+    color: rgb(255, 255, 255);
+    letter-spacing:2px;
+    top: 13rem;
+}
+
+.codigodeSegurança---docartao{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 0.7rem;
+    font-weight: 600;
+    left: 18.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    top: 6.5rem;
+}
+
+
+.nomedoCliente--docartao{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 0.5rem;
+    left: 2rem;
+    color: rgb(255, 255, 255);
+    letter-spacing:2px;
+    top: 16rem;
+}
+
+.dataDeVencimento--docartao{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 0.5rem;
+    left: 16rem;
+    color: rgb(255, 255, 255);
+    letter-spacing:2px;
+    top: 16rem;
+
+}
+
+.codigodeSegurança---docartao{
+    position: absolute;
+}
