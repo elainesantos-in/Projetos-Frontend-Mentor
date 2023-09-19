@@ -105,6 +105,10 @@
     border-radius: 10px;
     background-color: hsl(1, 90%, 64%);
     margin-top: 0.5rem;
+    
+}
+.apagando{
+    display: none;
 }
 
 .semBackground{
