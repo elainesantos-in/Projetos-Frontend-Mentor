@@ -44,4 +44,5 @@
     color: hsl(219, 12%, 42%);
     position: absolute;
     left: 14rem;
+    cursor: pointer;
 }
