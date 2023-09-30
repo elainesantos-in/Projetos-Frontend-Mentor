@@ -71,6 +71,15 @@
     top: 16rem;
 
 }
+.dataDeVencimento--docartao2{
+    position: absolute;
+    font-family: 'Space Grotesk';
+    font-size: 0.5rem;
+    left: 17rem;
+    color: rgb(255, 255, 255);
+    letter-spacing:2px;
+    top: 16rem;
+}
 
 .codigodeSegurança---docartao{
     position: absolute;
