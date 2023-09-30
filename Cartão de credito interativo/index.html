@@ -23,7 +23,8 @@
     <p class="numerodoCartao">0000 0000 0000 0000</p>
     <p class="codigodeSegurança---docartao">000</p>
     <p class="nomedoCliente--docartao">JANE APPLESEED</p>
-    <p class="dataDeVencimento--docartao">00/00</p>
+    <p class="dataDeVencimento--docartao">00</p>
+    <p class="dataDeVencimento--docartao2">/00</p>
     
   </header>
   <main>
@@ -31,18 +32,21 @@
           <label for="digiteNomeCliente" class="Label--nomeCliente">CARDHOLDER NAME</label>
           <input  type="text" placeholder="e.g. Jane Appleseed" id="digiteNomeCliente" class="digiteNomeCliente">
           <label for="digiteNumeroCartao" class="Label--NumerodoCartao">CARD NUMBER</label>
-          <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="digiteNumeroCartao" class="digiteNumeroCartao">
+          <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="digiteNumeroCartao" class="digiteNumeroCartao">
           <div class="dataEcvc">
               <div class="containerData">
                   <label for="mesVencimento" class="LabelData">EXP. DATE (MM/YY)</label>
-                      <input type="text" placeholder="MM" id="mesVencimento" class="mesCartao">
-                      <input type="text" placeholder="YY" class="anoCartao">
+                      <input type="number" placeholder="MM" id="mesVencimento" class="mesCartao">
+                      <input type="number" placeholder="YY" class="anoCartao">
               </div>
               <div class="containerCvc">
                   <label for="codigoSeguranca" class="LabelCvc">CVC</label>
-                      <input type="text" placeholder="e.g. 123" id="codigoSeguranca" class="cvcCartao">
+                      <input type="number" placeholder="e.g. 123" id="codigoSeguranca" class="cvcCartao">
               </div>
           </div>
+      </div>
+      <div>
+        <button class="botaoConfirma">Confirm</button>
       </div>
   </main>
 
@@ -57,5 +61,6 @@
   Continue
   
   -->
+  <script src="codigo.js"></script>
 </body>
 </html>
