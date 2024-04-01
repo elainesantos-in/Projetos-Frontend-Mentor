@@ -1,0 +1,100 @@
+.botoes{
+    position: absolute;
+    left: 28.5rem;
+    top: 22rem;
+    width: 35rem;
+    
+}
+
+
+.botao--subtracao{
+    height: 2.8rem;
+    width: 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+    font-size: 2rem;
+    color: #fc7917;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    cursor:pointer;
+    
+}
+.quantidade{
+    font-size: 1rem;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    height: 2.8rem;
+    width: 3rem;
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+    padding: 0;
+    position: absolute;
+    left: 3rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botao--adicao{
+    height: 2.8rem;
+    width: 3rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+    font-size: 1.3rem;
+    color: #fc7917;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    padding: 0;
+    position: absolute;
+    left: 6rem;
+    top:0rem;
+    cursor:pointer;
+}
+
+.add--carrinho{
+    height: 2.8rem;
+    width: 15rem;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #ff6f01;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 10rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    box-shadow: 0rem 1rem 1rem #ad866b23;
+    cursor:pointer;
+    
+}
+
+
+.add--carrinho:hover{
+    background-color: #d7650e;
+}
+
+#carrinho{
+    font-size: 1.1rem;
+    margin: 0.7rem;
+    font-weight: 300;
+
+}
+
+.alerta{
+    margin-top: 0.9rem;
+    color: #e70c0c;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    display: none;
+}
