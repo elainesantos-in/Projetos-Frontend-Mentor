@@ -1,0 +1,48 @@
+.background{
+    padding: 0.5rem;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center; ;
+}
+
+
+.tituloNotificacao{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.quantidadeNotificacao{
+    background-color: hsl(219, 85%, 26%);
+    width: 2.5rem;
+    height: 2.2rem;
+    border-radius: 9px;
+    position: relative;
+    position: absolute;
+    left: 10rem;
+}
+
+.textoquantidadeNotificacao{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    position: absolute;
+    left: 0.8rem ;
+    top: 0.3rem;
+    margin: 0;
+    
+}
+
+.marcaTodos{
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(219, 12%, 42%);
+    position: absolute;
+    left: 14rem;
+    cursor: pointer;
+}
