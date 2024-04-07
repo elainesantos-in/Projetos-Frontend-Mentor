@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: none;
+}
+
+:root{
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vw;
+    background-color: var(--light-grayish-cyan);
+    font-family: 'Space Mono';
+    
+}
+
+#title{
+    position: absolute;
+    word-wrap: break-word;
+    top: 1.6rem;
+    font-size: 1.1rem;
+    width: 4rem;
+    letter-spacing: 4px;
+    color: var(--very-dark-cyan)
+}
+
+#section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    height: 22rem;
+    width: 45rem;
+    border-radius: 1rem;
+    position: relative;
+    
+}
+
+.card--one {
+    position: absolute;
+    top: 1rem;
+    left: 2.5rem;
+    
+}
+
+.card--one__h3 {
+    color: var(--grayish-cyan);
+    font-size: 0.7rem;
+    margin-bottom: 0.3rem;
+
+}
+
+.input--card__one{
+    border: none;
+    background-color: var(--very-light-grayish);
+    height: 1.9rem;
+    width: 17.6rem;
+    border-radius: 4px;
+}
+
+.input--card__one:focus{
+    outline: 0;
+}
+
+.div--button{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 20rem;
+    
+}
+
+.button--card-one{
+    border: none;
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-weight: 600;
+    font-family: 'Space Mono';
+    border-radius: 4px;
+    width: 5.3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+
+}
+#input--custon{
+    border: none;
+    background-color: var(--very-light-grayish);
+    color: var(--grayish-cyan);
+    font-weight: 600;
+    font-family: 'Space Mono';
+    border-radius: 4px;
+    width: 5.3rem;
+    height: 2.2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.card--two {
+    position: absolute;
+    top: 1rem;
+    left: 34.5rem;
+}
+
