@@ -1,0 +1,46 @@
+.planos {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 22rem ;
+    margin: 2rem;
+    
+    
+}
+
+.basic__master {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px 4px #c5c4c465;
+    height: 16.5rem ;
+    width: 12rem;
+}
+
+.professional{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( 135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)); 
+    border-radius: 0.5rem;
+    height: 18.5rem;
+    width: 13rem;  
+}
+
+@media screen and (max-width:41rem) {
+    .planos  {
+        flex-direction: column;
+        height: 55rem;     
+    }
+
+    .basic__master {
+        margin-top: 2rem;
+    }
+
+    .professional {
+        margin-top: 2rem;
+    }
+    
+
+   
+}
