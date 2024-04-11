@@ -1,0 +1,14 @@
+hr {
+    border: 0px; 
+    background-color: hsla(234, 13%, 49%, 0.171); 
+    height: 1px; 
+    margin: 0.2rem;
+}
+
+.hr__professional {
+    border: 0px;
+    background-color: hsla(0, 0%, 100%, 0.199);
+    height: 1px;
+    margin:0.2rem;
+
+}

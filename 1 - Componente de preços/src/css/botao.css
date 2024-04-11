@@ -1,0 +1,70 @@
+.botao__basicMaster {
+    border: none;
+    border-radius: 3px;
+    background-image: linear-gradient( to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%)); 
+    width: 85%; 
+    height: 1.80rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.link__botao {
+    text-decoration: none;
+    color:hsl(240, 78%, 98%)
+}
+
+.botao__professional {
+    border: none;
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 100%);
+    width: 85%;
+    height: 1.80rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.link__botao--profes {
+    text-decoration: none;
+    font-family:'Montserrat';
+    font-size: 0.6rem;
+    font-weight: 700;
+    color:hsl(237, 63%, 64%);
+}
+
+.ligaDesliga__checkbox {
+    position:absolute;
+    left: -9999px;
+    }
+    
+    .ligaDesliga__botao {
+    display:inline-flex;
+    vertical-align: middle;
+    position:relative;
+    cursor:pointer;
+    }
+    
+    .ligaDesliga__botao::before,
+    .ligaDesliga__botao::after
+    {
+    content: " ";
+    }
+    
+    .ligaDesliga__botao::before {
+    display: inline-flex;
+    width: 2.7rem;
+    height: 1.5rem;
+    background: hsl(237, 63%, 64%);
+    border-radius: 1rem;
+    }
+    
+    .ligaDesliga__botao::after {
+    position: absolute;
+    top: 0.2em ;
+    right: 0.030em;
+    height: 1.2rem;
+    width: 1.2rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    }
+

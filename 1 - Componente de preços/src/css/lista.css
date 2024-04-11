@@ -1,0 +1,47 @@
+.lista {
+    list-style-type: none;
+    padding: 1rem 1rem 0rem 1rem;
+    margin:0;
+
+}
+
+.lista__item--basicMaster {
+    color:hsl(232, 13%, 33%) ;
+    font-family:'Montserrat';
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 0.80rem;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.lista__item--profissional {
+    color:hsl(0, 0%, 100%) ;
+    font-family:'Montserrat';
+    font-size: 0.6rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    text-align: center;
+    padding: 0.4rem;
+}
+/* OS VALORES GRANDES---------------------*/
+
+.lista__item--valorBasicMaster  {
+    color:hsl(232, 13%, 33%) ;
+    font-family:'Montserrat';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+    padding: 0.4rem;   
+}
+
+.lista__item--valorProfessional{
+    color:hsl(0, 0%, 100%) ;
+    font-family:'Montserrat';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+    padding: 0.4rem;
+}
