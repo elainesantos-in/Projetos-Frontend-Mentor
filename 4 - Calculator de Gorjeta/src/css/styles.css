@@ -62,7 +62,6 @@ body{
 }
 
 .input--card__one{
-    position: relative;
     border: none;
     background-color: var(--very-light-grayish);
     height: 1.9rem;
@@ -137,7 +136,7 @@ body{
     border-radius: 15px;
 }
 
-.card--two__h3__one{
+.card--two_h3_one{
     color: var(--white);
     font-size: 0.8rem;
     margin-bottom: 0.3rem;
@@ -146,7 +145,7 @@ body{
     left: 1.7rem;
 }
 
-.card--two__p__one{
+.card--two_p_one{
     color: var(--grayish-cyan);
     font-size: 0.7rem;
     font-weight: 600;
@@ -159,17 +158,17 @@ body{
     font-size: 2rem;
     color: var(--strong-cyan);
     position: absolute;
-    left: 8.5rem;
+    left: 11.5rem;
     top: 0.2rem;
 }
-.card--two__h1__one {
+.card--two_h1_one {
     position: absolute;
     color: var(--strong-cyan);
     font-size: 2.4rem;
-    left: 10rem;
+    left: 13rem;
 }
 
-.card--two__h3__two{
+.card--two_h3_two{
     color: var(--white);
     font-size: 0.8rem;
     margin-bottom: 0.3rem;
@@ -178,7 +177,7 @@ body{
     left: 1.7rem;
     top: 4rem;
 }
-.card--two__p__two{
+.card--two_p_two{
     color: var(--grayish-cyan);
     font-size: 0.7rem;
     font-weight: 600;
@@ -192,14 +191,14 @@ body{
     font-size: 2rem;
     color: var(--strong-cyan);
     position: absolute;
-    left: 8.5rem;
+    left: 10rem;
     top: 4.2rem;
 }
-.card--two__h1__two {
+.card--two_h1_two {
     position: absolute;
     color: var(--strong-cyan);
     font-size: 2.4rem;
-    left: 10.5rem;
+    left: 11.5rem;
     top: 4rem;
 }
 
@@ -223,15 +222,17 @@ body{
     top: 15rem;
 }
 
-.erro{
-    position: absolute;
-    color: #ff0000;
-    font-size: 0.6rem;
-    top: 18.5rem;
-    width: 6rem;
-    left: 0rem;
-    display: none;
-    
+.campo-invalido {
+    border: 1px solid red;
 }
+
+.mensagem-aviso {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    margin-top: 7rem;
+    margin-left: 11.5rem;
+    display: none;
+}0
 
 

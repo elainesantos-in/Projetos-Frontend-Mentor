@@ -1,36 +1,61 @@
-const valorGorjetaPorPessoa = document.getElementById('valor--gorjeta');
-const valorTotalPorPessoa = document.getElementById('valor--total');
-const error = document.querySelector('erro')
+var valoresPorcentagem = {
+    botao5: 5,
+    botao10: 10,
+    botao15: 15,
+    botao25: 25,
+    botao50: 50
+};
 
-const botoesPorcentagem = [botao5, botao10, botao15, botao25, botao50];
-
-botoesPorcentagem.forEach(botao => {
-    botao.addEventListener('click', calcularGorjeta);
+// Input customizado de porcentagem
+document.getElementById("input--custom").addEventListener("input", function() {
+    var inputCustom = parseFloat(document.getElementById("input--custom").value);
+    if(isNaN(inputCustom)){
+        calcularPorcentagem(0);
+    }else{
+    calcularPorcentagem(inputCustom);
+    }
 });
 
-function calcularGorjeta(event){
-    const inputDinheiro = parseFloat(document.getElementById('input--dinheiro').value);
-    const inputPessoas = parseFloat(document.getElementById('input--pessoas').value);
-    const inputCustom = parseFloat(document.getElementById('input--custom').value);
+// Botões de porcentagem fixa
+var botoesPorcentagem = document.querySelectorAll("button[id^='botao']");
+botoesPorcentagem.forEach(function(botao) {
+    botao.addEventListener("click", function() {
+        var porcentagemFixa = valoresPorcentagem[botao.id];
+        var inputCustom = parseFloat(document.getElementById("input--custom").value);
+        var porcentagemFinal = porcentagemFixa + (inputCustom || 0);
+        console.log("botão",porcentagemFinal)
+        calcularPorcentagem(porcentagemFinal);
+    });
+});
 
-    const porcentagem = parseFloat(event.target.value);
-    if(inputPessoas == 0){
-        inputPessoas.style.borderColor = "rgb(223, 6, 6)"
-        error.style.display='block'
+function calcularPorcentagem(porcentagem) {
 
+    var inputDinheiro = parseFloat(document.getElementById("input--dinheiro").value);
+    var inputPessoas = parseFloat(document.getElementById("input--pessoas").value);
+    var somaPorcentagem =+ porcentagem
+
+    if(isNaN(inputDinheiro)){
+        document.getElementById("input--dinheiro").classList.add("campo-invalido");
+    }else{
+        document.getElementById("input--dinheiro").classList.remove("campo-invalido");
+    }if(isNaN(inputPessoas) || inputPessoas <= 0){
+        document.getElementById("input--pessoas").classList.add("campo-invalido");
+        document.getElementById("aviso-pessoas").style.display = 'block'
+    }else{
+        document.getElementById("input--pessoas").classList.remove("campo-invalido");
+        document.getElementById("aviso-pessoas").style.display = 'none'
+    }if (isNaN(inputDinheiro) || (isNaN(inputPessoas))){
+        return;
     }
+    
+    if(somaPorcentagem ==0 || inputPessoas == 0){
+        return;
+    }else{
+        var valorGorjeta = (inputDinheiro * (somaPorcentagem ) / 100) / inputPessoas;
+        var valorTotal = (inputDinheiro + (inputDinheiro * (somaPorcentagem ) / 100)) / inputPessoas;
 
-    if(!isNaN(inputCustom) && inputCustom !== 0) {
-        const totalGorjeta = (inputDinheiro * (inputCustom + porcentagem)) / 100;
-        const porcentPorPessoa = totalGorjeta / inputPessoas;
-        const totalPessoas = (inputDinheiro + totalGorjeta) / inputPessoas;
-        valorGorjetaPorPessoa.innerText = porcentPorPessoa.toFixed(2);
-        valorTotalPorPessoa.innerText = totalPessoas.toFixed(2);
-    } else {
-        const totalGorjeta = inputDinheiro * (porcentagem / 100);
-        const porcentPorPessoa = totalGorjeta / inputPessoas;
-        const totalPessoas = (inputDinheiro + totalGorjeta) / inputPessoas;
-        valorGorjetaPorPessoa.innerText = porcentPorPessoa.toFixed(2);
-        valorTotalPorPessoa.innerText = totalPessoas.toFixed(2);
+        console.log("gosgeta",valorGorjeta)
+        document.getElementById("valor--gorjeta").innerText = valorGorjeta.toFixed(2);
+        document.getElementById("valor--total").innerText = valorTotal.toFixed(2);
     }
 }
